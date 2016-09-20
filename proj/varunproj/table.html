@@ -1,0 +1,72 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <link rel="stylesheet" type="text/css" href="add.css" media="all">
+ </head>
+ <style>
+ body{
+ background-image:url("onvac.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ }
+ </style>
+ <h1 align="center" style="color:orange">YOU CAN FLY OUT HERE.SORT OF.</h1>
+ <div align="right">
+        <select id="ddl" onChange="showTA()" style="margin:0 auto" >
+        <option value="none">countries</option>
+            <option value="ib">INDIA</option>
+            <option value="rs">USA</option>
+            <option value="bp">RUSSIA</option>
+            <option value="bp">NEW ZEALAND</option>
+            </select>
+        <select id="ddl1" onChange="showTA()" style="margin:0 auto">
+        <option value="none">HOTELS</option>
+            <option value="ib">southern star</option>
+            <option value="rs">radisson blu</option>
+            <option value="bp">lalith mahal</option>
+            <option value="bp">The crown</option>
+            </select>
+            <select id="ddl2" onChange="showTA()" style="margin:0 auto">
+        <option value="none">FLIGHTS</option>
+            <option value="ib">AIR INDIA</option>
+            <option value="rs">QATAR AIRWAYS</option>
+            <option value="bp">EMIRATES</option>
+            <option value="bp">BRITSH AIRWAYS</option>
+            </select>
+
+  </div>
+  <div>
+        <table id="selectBox" class="tables" 
+                    style="display:none; margin:0 auto;">
+                <tr class="header_rows">
+                    <th>ID</th>
+                    <th>HostOS</th>
+                    <th>BuildID</th>
+                    <th>Description</th>
+                    <th>User</th>
+                    <th>StartTime</th>
+                </tr>
+                <tr class="data_rows" ng-repeat='b in t1'>
+                    <td class="tds">{{b.ID}}</td>
+                    <td class="tds">{{b.HostOS}}</td>
+                    <td class="tds">{{b.BuildID}}</td>
+                    <td class="tds">{{b.Description}}</td>
+                    <td class="tds">{{b.User}}</td>
+                    <td class="tds">{{b.StartTime}}</td>
+                </tr>
+        </table>
+  </div>
+  <nav>
+    <form>
+        <a href="table.html">HOME</a> : :
+        <a href="abt.html">ABOUT US</a> : :
+        <a href="query.html">FEEDBACK</a>
+        </form> 
+        </nav>
+        </br>
+         </br>
+        <div align="center">
+       <h1> <marquee direction="left">TRAVEL WITH US</marquee></h1>
+        </div>
+  </body>
+  </html>

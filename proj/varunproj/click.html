@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<style>
+body{
+ background-image:url("img2.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ }
+table, th, td {
+    border: 1px solid black;
+}
+</style>
+<table width="50%" cellpadding="20">
+<caption>Package Information</caption>
+  <tr>
+    <th>PLACES</th>
+    <th>PACKAGES</th>
+  </tr>
+  <tr>
+    <td>Mysore Palace</td>
+    <td>5lpa</td>
+    
+  </tr>
+  <tr>
+    <td>New York City</td>
+    <td>1cr</td>
+  </tr>
+  <tr>
+    <td>auckland</td>
+    <td>5cr</td>
+  </tr>
+</table>
+<style>
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+</style>
+</head>
+<body>
+
+<h2>Clickable Dropdown</h2>
+
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="www.india.org">INDIA</a>
+    <a href="#about">USA</a>
+    <a href="#contact">NEW ZEALAND</a>
+  </div>
+</div>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+<form>
+<h3 align="right">Follow us on</h3></p>
+    <a href="http://www.facebook.com"><img src="facebook.png" heigth="40" width="50" align="right"></a>
+    <a href="http://www.twitter.com"><img src="twitter.jpg" heigth="40" width="50" 
+    align="right"></a>
+    <a href="http://www.instagram.com"><img src="instagram.jpg" heigth="40" width="50" align="right"></a>
+    </form>
+</body>
+</html>
+
+
+
+
+
+
+ 

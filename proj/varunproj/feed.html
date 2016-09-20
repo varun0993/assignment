@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="link.css" media="all">
+	  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style>
+ body{
+ background-image:url("image.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ </style>
+<body>
+<div class="container" align="right">
+  <button type="button" class="btn btn-default">Account</button>
+  <button type="button" class="btn btn-primary">My scratch Card</button>
+  <button type="button" class="btn btn-success">Manage Trips</button>
+  <button type="button" class="btn btn-info">support</button>
+  <button type="button" class="btn btn-info">Holiday Activities</button>
+</div>
+</br>
+</br>
+</br>
+  <form>
+  <div class="col-sm-4">
+    <div class="form-group">
+      <label for="email">Name:</label>
+     <input type="email" class="form-control" id="email" placeholder="Enter name">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Address:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter Address">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Country:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter Country name">
+      </div>
+    <div class="checkbox">
+      <label><input type="checkbox"> Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>
+<h3>FEEDBACK</h3>
+<input type="text" id="fname" onkeyup="myFunction()"></br>
+<input type="submit" value="Submit">
+
+</br>
+</br>
+</br>
+<form>
+<a href="details.html"><img src="thnx1.jpg" heigth="70" width="90" align="center" onmouseover="bigImg(this)" alt="thank you" onmouseout="normalImg(this)"/></a>
+</form>
+<script>
+function bigImg(x) {
+    x.style.height = "150px";
+    x.style.width = "150px";
+}
+
+function normalImg(x) {
+    x.style.height = "62px";
+    x.style.width = "62px";
+}
+function myFunction()
+{
+var x=document.getElementById('fname');
+x.value=x.value.toLowerCase();
+}
+</script>
+</br>
+</br>
+</br>
+ <form >
+        <a href="home.html">HOME</a> : :
+        <a href="abt.html">ABOUT US</a> : :
+        <a href="feed.html">FEEDBACK</a>: :
+        <a href="https://www.billdesk.com/pgidsk/pgmerc/hdfccard/">PAYMENT</a>
+        </form>
+        </br>
+         </br>
+          </br>
+          <form>
+        <h3 align="right">Follow us on</h3></p>
+    <a href="http://www.facebook.com"><img src="facebook.png" heigth="40" width="50" align="right"></a>
+    <a href="http://www.twitter.com"><img src="twitter.jpg" heigth="40" width="50" 
+    align="right"></a>
+    <a href="http://www.instagram.com"><img src="instagram.jpg" heigth="40" width="50" align="right"></a></form>
+</body>
+</html>

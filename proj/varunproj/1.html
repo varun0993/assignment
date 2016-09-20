@@ -1,0 +1,185 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Q Cafee Home</title>
+	
+</head>
+<style>
+	body{
+		background-image: url("image.jpg");
+	}
+	nav{
+		color: brown;
+	}
+
+</style>
+<script type="text/javascript">
+function dispHome(){
+	document.getElementById('h1').style.display='block'
+	document.getElementById('m1').style.display='none'
+	document.getElementById('a1').style.display='none'
+	document.getElementById('c1').style.display='none'
+}
+
+function dispMenu(){
+	document.getElementById('h1').style.display='none'
+	document.getElementById('m1').style.display='block'
+	document.getElementById('a1').style.display='none'
+	document.getElementById('c1').style.display='none'
+}
+
+function dispAbout(){
+	document.getElementById('h1').style.display='none'
+	document.getElementById('m1').style.display='none'
+	document.getElementById('a1').style.display='block'
+	document.getElementById('c1').style.display='none'
+}
+function dispContact(){
+	document.getElementById('h1').style.display='none'
+	document.getElementById('m1').style.display='none'
+	document.getElementById('a1').style.display='none'
+	document.getElementById('c1').style.display='block'
+}
+</script>
+<body>
+<nav>
+	<a id="1" style="color: #2b1408; font-size: xx-large;" onclick="dispHome()"> HOME </a> | 
+	<a id="2" style="color: #2b1408; font-size: xx-large;" onclick="dispMenu()"> MENU </a> |
+	<a id="3" style="color: #2b1408; font-size: xx-large;" onclick="dispAbout()"> ABOUT US </a> |
+	<a id="4" style="color: #2b1408; font-size: xx-large;" onclick="dispContact()"> CONTACT </a> </br>
+</nav>
+
+<div class="home" id="h1" style="display:block">
+	<h1 align="center" color="brown"> WELCOME TO Q CAFEE </h1>
+	<marquee style="font-size: xx-large; color: #231d17;"> Welcome, enjoy your time here.. !! </marquee>
+	<table align="center" border="5">
+	<tr>
+		<td>
+			<a href="http://www.google.co.in"><img src="1.jpg" height="250" width="350"></a>
+		</td>
+		<td>
+			<a href="http://www.facebook.com"><img src="2.jpg" height="250" width="350"></a>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="http://www.twitter.co.in"><img src="3.jpg" height="250" width="350"></a>
+		</td>
+		<td>
+			<a href="http://www.gmail.co.in"><img src="4.jpg" height="250" width="350"></a>
+		</td>
+	</tr>
+	</table>
+</div>
+
+<div class="menu" id="m1" style="display:none">
+	</br></br></br>
+	<marquee align="center" direction="down"><center><img src="menu.jpg" align="center" height="100" width="180"></center></marquee></br></br></br>
+	<table align="center" border="5">
+	<tr>
+	<th style="font-size: x-large;">sl.no</th>
+	<th style="font-size: x-large;">Bewerage</th>
+	<th style="font-size: x-large;">Price</th>
+	<th></th>
+	<th style="font-size: x-large;">Select</th>
+	</tr>
+	<tr>
+	<td style="font-size: xx-large;">1</td>
+	<td style="font-size: xx-large;">
+		Espresso
+	</td>
+	<td style="font-size: xx-large;">10 &#36;</td>
+	<td><img src="5.jpg" height="200" width="280"></td>
+	<td><input type="checkbox" name="menu"></td>
+	</tr>
+	<tr>
+	<td style="font-size: xx-large;">2</td>
+	<td style="font-size: xx-large;">
+		Milk shake
+	</td>
+	<td style="font-size: xx-large;">15 &#36;</td>
+	<td><img src="6.jpg" height="200" width="280"></td>
+	<td><input type="checkbox" name="menu"></td>
+	</tr>
+	<tr>
+	<td style="font-size: xx-large;">3</td>
+	<td style="font-size: xx-large;">
+		Black coffee
+	</td>
+	<td style="font-size: xx-large;">20 &#36;</td>
+	<td><img src="8.jpg" height="200" width="280"></td>
+	<td><input type="checkbox" name="menu"></td>
+	</tr>
+	<tr>
+	<td style="font-size: xx-large;">4</td>
+	<td style="font-size: xx-large;">
+		Black tea
+	</td>
+	<td style="font-size: xx-large;">25 &#36;</td>
+	<td><img src="7.jpg" height="200" width="280"></td>
+	<td><input type="checkbox" name="menu"></td>
+	</tr>
+	</table></br></br>
+	<center><input type="submit" name=""></center>
+</div>
+
+<div class="aboutUs" id="a1"style="display:none">
+	</br></br>
+	<center><img src="about.jpg"></center></br></br>
+	<pre style="font-size: xx-large;">Location:</pre>
+	<pre style="font-size: xx-large;">
+	# 123, JLB road,
+	Bangalore.</pre></br>
+	<pre style="font-size: xx-large;">Helpline:</pre>
+	<pre style="font-size: xx-large;"> 080-111122223333</pre>
+</div>
+
+<div class="contact" id="c1" style="display:none">
+	<center><img src="contact-us-girl.jpg"></center></br></br>
+	<form>
+	</br></br>
+	<p style="    color: floralwhite; text-decoration: underline;">Enter your queries</p>
+	<p>Name</p>
+	<input type="text" name=""></br>
+	<p>Email</p>
+	<input type="text" name=""></br>
+	<p>Details</p>
+	<textarea rows="10" cols="30">  </textarea></br>
+	<input type="submit" name="">
+	</form>
+	<footer>All rights received.</footer>
+</div>
+
+<!-- <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script> -->
+<script type="text/javascript">
+
+// 	jQuery('.1').click(function(){
+// 		jQuery('.home').show()
+// 		.jQuery('.menu').hide()
+// 		.jQuery('.aboutUs').hide()
+// 		.jQuery('.contact').hide();
+// 	});
+// 		jQuery('.2').click(function(){
+// 		jQuery('.home').hide()
+// 		.jQuery('.menu').show()
+// 		.jQuery('.aboutUs').hide()
+// 		.jQuery('.contact').hide();
+// 	});
+// 		jQuery('.3').click(function(){
+// 		jQuery('.hide').hide()
+// 		.jQuery('.menu').hide()
+// 		.jQuery('.aboutUs').show()
+// 		.jQuery('.contact').hide();
+// 	});
+// 	jQuery('.4').click(function(){
+// 		jQuery('.home').hide()
+// 		.jQuery('.menu').hide()
+// 		.jQuery('.aboutUs').hide()
+// 		.jQuery('.contact').show();
+// 	});
+	
+
+</script>
+</body>
+</html>

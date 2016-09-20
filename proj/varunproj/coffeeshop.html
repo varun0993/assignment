@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<title>coffee</title>
+<style>
+body{
+	background-image:url("img7.jpg");
+	background-size: cover;
+}
+
+</style>
+<body>
+<script type="text/javascript">
+function dispHome(){
+	document.getElementById('h1').style.display='block'
+	document.getElementById('m1').style.display='none'
+	document.getElementById('a1').style.display='none'
+	document.getElementById('c1').style.display='none'
+}
+
+function dispMenu(){
+	document.getElementById('h1').style.display='none'
+	document.getElementById('m1').style.display='block'
+	document.getElementById('a1').style.display='none'
+	document.getElementById('c1').style.display='none'
+}
+
+function dispAbout(){
+	document.getElementById('h1').style.display='none'
+	document.getElementById('m1').style.display='none'
+	document.getElementById('a1').style.display='block'
+	document.getElementById('c1').style.display='none'
+}
+function dispContact(){
+	document.getElementById('h1').style.display='none'
+	document.getElementById('m1').style.display='none'
+	document.getElementById('a1').style.display='none'
+	document.getElementById('c1').style.display='block'
+}
+</script>
+<body>
+<nav>
+	<a id="1" style="color: red; font-size: xx-large;" onclick="dispHome()"> HOME </a> | 
+	<a id="2" style="color: blue; font-size: xx-large;" onclick="dispMenu()"> MENU </a> |
+	<a id="3" style="color: green; font-size: xx-large;" onclick="dispAbout()"> ABOUT US </a> |
+	<a id="4" style="color: orange; font-size: xx-large;" onclick="dispContact()"> CONTACT </a> </br>
+</nav>
+
+<font size="10">
+<font color="red">
+<marquee direction="left">WELCOME TO COFFEESHOP</br>
+</br>
+</br>
+</br>
+</br>
+</font>
+</font>
+</marquee>
+</br>
+</br>
+<font size="6">
+<font color="blue">
+<marquee direction="right">HAVE A NICE DAY</marquee>
+</font>
+</font>
+</body>
+</html>
